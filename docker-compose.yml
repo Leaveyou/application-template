@@ -4,8 +4,7 @@ services:
     image: webserver:latest
     container_name: webserver.webscythe
     build:
-      dockerfile: docker/webserver/Dockerfile
-      context: .
+      context: ./docker/webserver
     ports:
       - "5000:80"
     volumes:
